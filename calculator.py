@@ -44,4 +44,4 @@ def binary_calculator(bin1, bin2, operator):
         else:
             output += '0'
 
-    return output.rjust(8, '0') 
+    return output.rjust(8, '0') # Adds leading 0's to the output
