@@ -18,21 +18,21 @@ Handles errors like invalid binary input, division by zero, and out-of-range res
 
 The function binary_calculator takes three arguments:
 
-bin1: First binary number as a string (ex.'1010').
+bin1: First binary number as a string (ex.`1010`).
 
-bin2: Second binary number as a string (ex.'0110').
+bin2: Second binary number as a string (ex.`0110`).
 
-operator: Arithmetic operator ('+', '-', '*', '/').
+operator: Arithmetic operator (`+`, `-`, `*`, `/`).
 
 2. Example Usage
 
-result = binary_calculator('1010', '1010', '+')
-print(result)  # Output: '00010100' (20 in decimal)
+result = binary_calculator(`1010`, `1010`, `+`)
+print(result)  # Output: `00010100` (20 in decimal)
 
 3. Error Handling
 
-Invalid binary input (ex.'1020') returns 'Error'.
+Invalid binary input (ex.`1020`) returns `Error`.
 
-Division by zero returns 'NaN'.
+Division by zero returns `NaN`.
 
-Results outside the 8-bit range return 'Overflow'.
+Results outside the 8-bit range return `Overflow`.
