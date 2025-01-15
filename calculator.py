@@ -35,7 +35,7 @@ def binary_calculator(bin1, bin2, operator):
     
     # Converts the results back to 8 bit binary
     output = ''
-    num_bits = total.bit_length()
+    num_bits = int(total).bit_length()
     for i in range(num_bits -1, -1, -1): # Starts from the highest bit and goes down to 2^0
         power = 2 ** i
         if total >= power: # Checks if the current power of 2 fits into the total
@@ -44,7 +44,4 @@ def binary_calculator(bin1, bin2, operator):
         else:
             output += '0'
 
-    return output
-
-
-
+    return output.rjust(8, '0') 
